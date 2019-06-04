@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My's Fisrt Website</title>
+        <style>
+            body {
+                background: rgb(204, 255, 255);
+                color: rbg(45, 45, 45);
+                padding: 10px;
+                font-family: courier new;
+            }
+            header {
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+            #all-contents {
+                max-width: 800px;
+                margin: auto;
+            }
+            
+            /* navigation menu */
+            nav {
+                background: rgb(255, 230, 255);
+                margin: 0 auto;
+                margin-bottom: 20px;
+                display: flex;
+                padding: 10px;
+            }
+            nav header {
+                display: flex;
+                align-items: center;
+                color: rgb(255, 255, 255);
+                flex: 1;
+            }
+            nav ul {
+                list-style-image: none;
+            }
+            nav li {
+                display: inline-block;
+                padding: 0 10px;
+            }
+            nav a {
+                text-decoration: none;
+                color: #fff;
+            }
+            
+            /* main container area beneath menu */
+            main {
+                background: rgb(204, 204, 255);
+                display: flex;
+            }
+            .sidebar {
+                margin-right: 25px;
+                padding: 10px;
+            }
+            .sidebar img {
+                width: 200px;
+            }
+            .content {
+                flex: 1;
+                padding: 15px;
+            }
+            .interests header {
+                font-size: 1.25em;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <!--YOUR HTML TAGS GO HERE-->
+        <div id="all-contents">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                </ul>
+            </nav>
+            
+            <main>
+                <div class="sidebar">
+                    <img src="https://mail.google.com/mail/u/0?ui=2&ik=a3a187fa52&attid=0.1&permmsgid=msg-f:1635415026709575663&th=16b2294d4f5c37ef&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ_iwb8ul27Ry-ZYrI3bA-MJ8lzz3yQbDPF1NMnODLxuBWyHp-Hx4Xb4j6wpTeRixV2zylhhHore0-Q0gcoEsHvyNDfyY_xBt_ualx252W1TFbHQKRwD2t_aBTg&disp=emb&realattid=941b6b6eecef8a35_0.1.1">
+                </div>
+                
+                <div class="content"> <header>My Ngo</header>
+                <p> Student at Belle Chasse High School </p>
+                <section class="interests">
+                    <header1>Interests</header1>
+                    <ul>
+                        <li>Being involved in Beta</li>
+                        <li>Painting</li>
+                        <li>Shopping</li>
+                    </ul>
+                </section>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
