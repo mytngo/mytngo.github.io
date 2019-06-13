@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bouncing Box</title>
+	<script src="jquery.min.js"></script>
+
+<!-- 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+
+	<!-- BEGIN CSS -->
+	<style>
+		/* TODO 1 */
+		.box {
+			width: 70px;
+			height: 70px;
+			background-image: url(data:image/jpeg;base64,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) ;
+			font-size: 300%;
+			text-align: center;
+			display: square;
+			position: absolute;
+			top: 100px;
+			left: 0px;
+		}
+	</style>
+
+</head>
+<body class="board">
+	<!-- HTML for the box -->
+	<div class="box">?</div>
+
+	<!-- BEGIN JAVASCRIPT -->
+	<script>
+		(function(){
+			'use strict'
+			/* global jQuery */
+
+			// jQuery stuff setup for you
+			var box = jQuery('.box');
+			var boardWidth = jQuery('.board').width();
+	
+			// TODO 2 - Variable declarations 
+            var position = 0;      
+            var points = 0;         
+            var speed = 420;      
+            var direction = 1;
+            box.css('left', 0)
+            box.text(0)
+			function update() {
+				// TODO 3 / 6 / 7 / 8
+			    position += speed * direction;    // increment position by speed on every update
+        console.log("new position: " + position);
+      
+        if(position > boardWidth) {
+        	console.log("Right Wall Hit");
+        	direction = -1;
+        	console.log(direction)
+        }
+    	if(position < 0) {
+        	console.log("Left Wall Hit");
+        	direction = 1;
+        	console.log(direction)
+       }
+				box.css('left', position);
+			}
+
+
+			
+			function handleBoxClick() {
+				// TODO 4 / 5
+			 points += 2;           // increase the point total
+ box.text(points);      // update the new points total displayed by the box
+ position = 0;         // reset the position of the box to 0
+  speed += 3;    // increase the speed of the box on every click
+				
+			};
+
+
+			//this executes the update function code every 50 milliseconds
+			setInterval(update, 50);
+			// this executes the handleBoxClick function code every time the box is clicked on
+			box.on('click', handleBoxClick);
+		})();
+	</script>
+</body>
+</html>
