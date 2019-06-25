@@ -64,6 +64,14 @@
                 font-size: 1.25em;
             }
         </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("button").mouseenter(function(){
+                    $("ul.professional-interests").slideDown();
+                });
+  });
+        </script>
     </head>
     
     <body>
@@ -91,6 +99,19 @@
                         <li>Shopping</li>
                     </ul>
                 </section>
+                </div>
+            </main>
+            <main>
+                <div class="content">
+                    <header>Professional Interests</header>
+                    <section class="interets">
+                        <button>Use me to see my professional interests</button>
+                        <ul class="professional-interests">
+                            <li>Anatomy</li>
+                            <li>Physiology</li>
+                            <li>Anesthetics</li>
+                        </ul>
+                    </section>
                 </div>
             </main>
         </div>

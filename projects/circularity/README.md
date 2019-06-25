@@ -279,6 +279,7 @@ Pretty, right? But we want to draw 100 circles! If we were to call this function
 
 #### TODO 4 : Move your circles
 
+
 Awesome, let's do some fun stuff with our circles now.  Find the `function update()` where we will write code to animate our circles. 
 
 Remember that our `update()` method is called 60 times per second (also referred to as 60 ticks per second). To get our circles to move we will use the `physikz.updatePosition( <objectToMove> )` method which accepts a circle as an argument. 
